@@ -1,0 +1,75 @@
+.booking-page {
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0e7ef 0%, #f5f6fa 100%);
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.booking-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.theater-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.theater-card {
+  background: rgba(255,255,255,0.85);
+  padding: 18px;
+  margin: 14px 0;
+  width: 60%;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+  border: 2px solid #2563eb;
+  backdrop-filter: blur(6px);
+  transition: box-shadow 0.2s, border 0.2s;
+}
+.theater-card:hover {
+  box-shadow: 0 16px 32px rgba(25,118,210,0.18);
+  border: 2px solid #1976d2;
+}
+
+.showtime-button {
+  background: #1a2238;
+  border: 2px solid #e0b84c;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  box-shadow: 0 2px 8px rgba(224,184,76,0.10);
+  transition: background 0.2s, color 0.2s, border 0.2s, transform 0.18s;
+}
+.showtime-button:hover {
+  background: #e0b84c;
+  color: #1a2238;
+  border: 2px solid #1a2238;
+  transform: scale(1.07);
+  box-shadow: 0 4px 16px rgba(26,34,56,0.13);
+}
+
+.back-button {
+  background: linear-gradient(90deg, #23395d 0%, #485563 100%);
+  color: #f7c873;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  margin-bottom: 16px;
+  transition: background 0.2s, color 0.2s;
+}
+.back-button:hover {
+  background: linear-gradient(90deg, #f7c873 0%, #ffe9b0 100%);
+  color: #23395d;
+}

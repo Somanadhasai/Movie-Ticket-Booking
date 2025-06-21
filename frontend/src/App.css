@@ -1,0 +1,95 @@
+body {
+  background: linear-gradient(120deg, #f7fafd 0%, #e9eef6 40%, #f5f6fa 100%);
+  background-attachment: fixed;
+  font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  color: #222;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.13;
+  background-image: url('data:image/svg+xml;utf8,<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="60" y="0" width="1" height="120" fill="%23b6c3d1" opacity="0.18"/><rect x="0" y="60" width="120" height="1" fill="%23b6c3d1" opacity="0.18"/><circle cx="60" cy="60" r="40" stroke="%23b6c3d1" stroke-width="1" opacity="0.10"/></svg>');
+  background-repeat: repeat;
+  background-size: 320px 320px;
+}
+
+.main-content {
+  position: relative;
+  z-index: 1;
+  background: rgba(255,255,255,0.82);
+  border-radius: 22px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+  backdrop-filter: blur(8px);
+  margin: 32px auto;
+  padding: 32px 24px;
+  max-width: 900px;
+}
+
+.app-header, .page-title, h1, h2, h3 {
+  font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+  letter-spacing: 0.05em;
+}
+
+/* Optional: subtle filmstrip accent at the top */
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #fff;
+  border-bottom: 2px solid #e0e0e0;
+  padding: 16px 32px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.app-header img {
+  height: 48px;
+}
+
+/* Card style for movie listings */
+.movie-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 24px 16px 16px 16px;
+  margin: 16px;
+  transition: box-shadow 0.2s;
+}
+.movie-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+
+/* Buttons */
+button, .details-button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover, .details-button:hover {
+  background: #1e40af;
+}
+
+/* For login/signup containers */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+/* Responsive grid for movie listing */
+.movie-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Add more as needed for your app */ 
